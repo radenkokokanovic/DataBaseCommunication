@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.radenko.databasecommunication.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JSON prikaz"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_GetJson"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Get JSON"
+        android:onClick="getJSON"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_parseJson"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Parse Json"
+        android:onClick="parseJSON"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_GetJson" />
+
+</android.support.constraint.ConstraintLayout>
